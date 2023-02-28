@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/guess-the-number/static/css/main.bb10af7c.css",
-    "main.js": "/guess-the-number/static/js/main.62d9fae3.js",
+    "main.js": "/guess-the-number/static/js/main.f022d3cd.js",
     "index.html": "/guess-the-number/index.html",
     "main.bb10af7c.css.map": "/guess-the-number/static/css/main.bb10af7c.css.map",
-    "main.62d9fae3.js.map": "/guess-the-number/static/js/main.62d9fae3.js.map"
+    "main.f022d3cd.js.map": "/guess-the-number/static/js/main.f022d3cd.js.map"
   },
   "entrypoints": [
     "static/css/main.bb10af7c.css",
-    "static/js/main.62d9fae3.js"
+    "static/js/main.f022d3cd.js"
   ]
 }
