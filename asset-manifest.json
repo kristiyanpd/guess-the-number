@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/guess-the-number/static/css/main.bb10af7c.css",
+    "main.js": "/guess-the-number/static/js/main.62d9fae3.js",
+    "index.html": "/guess-the-number/index.html",
+    "main.bb10af7c.css.map": "/guess-the-number/static/css/main.bb10af7c.css.map",
+    "main.62d9fae3.js.map": "/guess-the-number/static/js/main.62d9fae3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb10af7c.css",
+    "static/js/main.62d9fae3.js"
+  ]
+}
