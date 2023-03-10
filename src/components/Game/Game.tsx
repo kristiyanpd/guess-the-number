@@ -1,4 +1,5 @@
 import * as React from "react";
+import useSound from "use-sound";
 import {
   NUMBER_MAX,
   NUMBER_MIN,
@@ -10,6 +11,9 @@ import generateRandomNumber from "../../utilities/game-helpers";
 import RemainingAttempts from "../RemainingAttempts";
 import Record from "../Record";
 import GuessFeedback from "../GuessFeedback";
+import win from "../../sounds/win.mp3";
+import lose from "../../sounds/lose.mp3";
+import error from "../../sounds/error.mp3";
 
 function Game() {
   const [remainingAttempts, setRemainingAttempts] = React.useState(
@@ -22,11 +26,16 @@ function Game() {
   const [status, setStatus] = React.useState("running");
   const [feedback, setFeedback] = React.useState("");
 
+  const [playWin] = useSound(win);
+  const [playLose] = useSound(lose);
+  const [playError] = useSound(error);
+
   function handleSubmitGuess(tentativeGuess: number) {
     const nextRemainingAttempts = remainingAttempts - 1;
     if (tentativeGuess === secretNumber) {
       setStatus("won");
       setRecord(record + 1);
+      playWin();
       setFeedback("🎉 Congrats! You guessed the number!");
       return;
     }
@@ -34,9 +43,11 @@ function Game() {
     if (nextRemainingAttempts === 0) {
       setStatus("lost");
       setRecord(0);
+      playLose();
       setFeedback("💣 You lost!");
       return;
     }
+    playError();
     setFeedback(
       tentativeGuess > secretNumber
         ? "📈 Secret number is lower!"
