@@ -1,13 +1,18 @@
 {
   "files": {
     "main.css": "/guess-the-number/static/css/main.bb10af7c.css",
-    "main.js": "/guess-the-number/static/js/main.f022d3cd.js",
+    "main.js": "/guess-the-number/static/js/main.ae5748a5.js",
+    "static/js/845.e3e61fa9.chunk.js": "/guess-the-number/static/js/845.e3e61fa9.chunk.js",
+    "static/media/lose.mp3": "/guess-the-number/static/media/lose.69d30258577d3b8e2d95.mp3",
+    "static/media/win.mp3": "/guess-the-number/static/media/win.9cfbe32b098353b316e2.mp3",
+    "static/media/error.mp3": "/guess-the-number/static/media/error.e88d4ea0b945d8e42f62.mp3",
     "index.html": "/guess-the-number/index.html",
     "main.bb10af7c.css.map": "/guess-the-number/static/css/main.bb10af7c.css.map",
-    "main.f022d3cd.js.map": "/guess-the-number/static/js/main.f022d3cd.js.map"
+    "main.ae5748a5.js.map": "/guess-the-number/static/js/main.ae5748a5.js.map",
+    "845.e3e61fa9.chunk.js.map": "/guess-the-number/static/js/845.e3e61fa9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bb10af7c.css",
-    "static/js/main.f022d3cd.js"
+    "static/js/main.ae5748a5.js"
   ]
 }
